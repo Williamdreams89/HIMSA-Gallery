@@ -36,6 +36,10 @@ const StyledBurger = styled.div`
   div:nth-of-type(3) {
     transform: ${({ showMenu }) => (showMenu ? "rotate(-45deg)" : "rotate(0)")};
   }
+
+  @media screen and (min-width:761px){
+      display:none;
+  }
 `;
 
 function Burger() {
